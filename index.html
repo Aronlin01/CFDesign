@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CFDesign 鎮富設計</title>
+  <style>
+    body {
+      font-family: 'Microsoft JhengHei', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    .lang-switch {
+      float: right;
+      padding: 14px 20px;
+      color: #ccc;
+    }
+    .container {
+      padding: 40px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function switchLang(lang) {
+      const zh = document.querySelectorAll('.zh');
+      const en = document.querySelectorAll('.en');
+      zh.forEach(el => el.style.display = lang === 'zh' ? 'block' : 'none');
+      en.forEach(el => el.style.display = lang === 'en' ? 'block' : 'none');
+    }
+    window.onload = () => switchLang('zh');
+  </script>
+</head>
+<body>
+
+<header>
+  <h1>CFDesign 鎮富設計</h1>
+  <p class="zh">專業網站與系統設計服務</p>
+  <p class="en">Professional Web & System Design Services</p>
+</header>
+
+<nav>
+  <a href="#services">服務 / Services</a>
+  <a href="#about">關於 / About</a>
+  <a href="#contact">聯絡 / Contact</a>
+  <span class="lang-switch">
+    <a href="javascript:void(0)" onclick="switchLang('zh')">中文</a> |
+    <a href="javascript:void(0)" onclick="switchLang('en')">EN</a>
+  </span>
+</nav>
+
+<div class="container">
+  <div id="services" class="section">
+    <h2 class="zh">服務項目</h2>
+    <h2 class="en">Services</h2>
+    <ul class="zh">
+      <li>網站設計與開發</li>
+      <li>系統平台整合</li>
+      <li>品牌與視覺設計</li>
+    </ul>
+    <ul class="en">
+      <li>Website Design & Development</li>
+      <li>System Integration</li>
+      <li>Branding & Visual Design</li>
+    </ul>
+  </div>
+
+  <div id="about" class="section">
+    <h2 class="zh">關於我們</h2>
+    <h2 class="en">About Us</h2>
+    <p class="zh">我們是致力於數位解決方案的設計團隊，從品牌、網站到系統整合，提供一站式專業服務。</p>
+    <p class="en">We are a digital design team dedicated to providing one-stop solutions from branding to websites and system integration.</p>
+  </div>
+
+  <div id="contact" class="section">
+    <h2 class="zh">聯絡方式</h2>
+    <h2 class="en">Contact</h2>
+    <p class="zh">LINE ID：<strong>longtime90911</strong></p>
+    <p class="en">LINE ID: <strong>longtime90911</strong></p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 CFDesign 鎮富設計. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
